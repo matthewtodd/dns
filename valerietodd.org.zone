@@ -1,0 +1,17 @@
+; A BIND file is a .TXT file that's used to export
+; DNS records from one domain to another. BIND
+; files are commonly used by lots of domain
+; registrars, so they're a good choice if
+; you're exporting resource records to a domain
+; that's managed by a different registrar.
+
+valerietodd.org. 3600 IN A 185.199.108.153
+valerietodd.org. 3600 IN A 185.199.109.153
+valerietodd.org. 3600 IN A 185.199.110.153
+valerietodd.org. 3600 IN A 185.199.111.153
+valerietodd.org. 3600 IN AAAA 2606:50c0:8000::153
+valerietodd.org. 3600 IN AAAA 2606:50c0:8001::153
+valerietodd.org. 3600 IN AAAA 2606:50c0:8002::153
+valerietodd.org. 3600 IN AAAA 2606:50c0:8003::153
+_github-pages-challenge-matthewtodd.valerietodd.org. 3600 IN TXT "7c95ff0cac53314b7837fac5839812"
+www.valerietodd.org. 3600 IN CNAME ghs.googlehosted.com.

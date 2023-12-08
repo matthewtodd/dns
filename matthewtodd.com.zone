@@ -1,0 +1,23 @@
+; A BIND file is a .TXT file that's used to export
+; DNS records from one domain to another. BIND
+; files are commonly used by lots of domain
+; registrars, so they're a good choice if
+; you're exporting resource records to a domain
+; that's managed by a different registrar.
+
+matthewtodd.com. 3600 IN MX 10 mx01.mail.icloud.com.
+matthewtodd.com. 3600 IN MX 10 mx02.mail.icloud.com.
+matthewtodd.com. 3600 IN SPF "v=spf1 redirect=icloud.com"
+matthewtodd.com. 3600 IN TXT "apple-domain=OV6hdxtj1YUKXaWo"
+matthewtodd.com. 3600 IN TXT "v=spf1 include:icloud.com ~all"
+_dmarc.matthewtodd.com. 3600 IN TXT "v=DMARC1; p=reject"
+sig1._domainkey.matthewtodd.com. 3600 IN CNAME sig1.dkim.matthewtodd.com.at.icloudmailadmin.com.
+matthewtodd.com. 3600 IN A 216.239.32.21
+matthewtodd.com. 3600 IN A 216.239.34.21
+matthewtodd.com. 3600 IN A 216.239.36.21
+matthewtodd.com. 3600 IN A 216.239.38.21
+matthewtodd.com. 3600 IN AAAA 2001:4860:4802:32::15
+matthewtodd.com. 3600 IN AAAA 2001:4860:4802:34::15
+matthewtodd.com. 3600 IN AAAA 2001:4860:4802:36::15
+matthewtodd.com. 3600 IN AAAA 2001:4860:4802:38::15
+www.matthewtodd.com. 3600 IN CNAME ghs.googlehosted.com.
